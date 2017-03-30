@@ -16,10 +16,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var todoListTableView: UITableView!
     
     var todoList = NSMutableArray()
+    var selectedDate = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         //CoreDataからdataを読み込む処理
         read()
     }
@@ -137,6 +142,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         // 文字を設定したセルを返す
         return cell
+    }
+    
+    //行が選択された時
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var dic = todoList[indexPath.row] as! NSDictionary
+        
+        selectedDate = dic["saveDate"] as! Date
+        
+        performSegue(withIdentifier: "showDetail", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let detailVC = segue.destination as! detailViewController
+        
+        detailVC.dcSelectedDate = selectedDate
     }
 
     override func didReceiveMemoryWarning() {
