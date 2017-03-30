@@ -15,6 +15,8 @@
 		190CA6D51E8C8F96003DBA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190CA6D31E8C8F96003DBA6A /* LaunchScreen.storyboard */; };
 		190CA6E01E8C8F96003DBA6A /* sampleCoreData002Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190CA6DF1E8C8F96003DBA6A /* sampleCoreData002Tests.swift */; };
 		190CA6EB1E8C8F96003DBA6A /* sampleCoreData002UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190CA6EA1E8C8F96003DBA6A /* sampleCoreData002UITests.swift */; };
+		190CA6FA1E8C90C4003DBA6A /* Todo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190CA6F81E8C90C4003DBA6A /* Todo+CoreDataClass.swift */; };
+		190CA6FB1E8C90C4003DBA6A /* Todo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190CA6F91E8C90C4003DBA6A /* Todo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		190CA6E61E8C8F96003DBA6A /* sampleCoreData002UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleCoreData002UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		190CA6EA1E8C8F96003DBA6A /* sampleCoreData002UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleCoreData002UITests.swift; sourceTree = "<group>"; };
 		190CA6EC1E8C8F96003DBA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190CA6F81E8C90C4003DBA6A /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		190CA6F91E8C90C4003DBA6A /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		190CA6BB1E8C8F96003DBA6A = {
 			isa = PBXGroup;
 			children = (
+				190CA6F81E8C90C4003DBA6A /* Todo+CoreDataClass.swift */,
+				190CA6F91E8C90C4003DBA6A /* Todo+CoreDataProperties.swift */,
 				190CA6C61E8C8F96003DBA6A /* sampleCoreData002 */,
 				190CA6DE1E8C8F96003DBA6A /* sampleCoreData002Tests */,
 				190CA6E91E8C8F96003DBA6A /* sampleCoreData002UITests */,
@@ -263,8 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				190CA6CA1E8C8F96003DBA6A /* ViewController.swift in Sources */,
+				190CA6FA1E8C90C4003DBA6A /* Todo+CoreDataClass.swift in Sources */,
 				190CA6D01E8C8F96003DBA6A /* sampleCoreData002.xcdatamodeld in Sources */,
 				190CA6C81E8C8F96003DBA6A /* AppDelegate.swift in Sources */,
+				190CA6FB1E8C90C4003DBA6A /* Todo+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
